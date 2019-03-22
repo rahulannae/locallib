@@ -1,10 +1,11 @@
 //uncomment if commented
+//SET DEBUG=express-locallibrary-tutorial:* & npm run devStart
 //dburi mongodb+srv://user:User@123@first-nycgh.mongodb.net/test?retryWrites=true
 //Import the mongoose module
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/my_database';
+var mongoDB = 'mongodb+srv://user:User@123@first-nycgh.mongodb.net/test?retryWrites=true';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
 //Get the default connection, db is Connection instance, on conn 'open' event is triggered
@@ -155,3 +156,7 @@ Story.find().populate('author', 'name', null, null, { sort: { name: -1 } }).exec
 
 
 
+//router verbs: post(), put(), delete(), options(), trace(), copy(), lock(),
+//  mkcol(), move(), purge(), propfind(), proppatch(), unlock(), report(), mkactivity(),
+//   checkout(), merge(), m-search(), notify(), subscribe(), unsubscribe(), patch(),
+//    search(), connect().
