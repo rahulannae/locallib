@@ -1,4 +1,6 @@
 //uncomment if commented
+// npm install express-generator
+// express app-name --view=pug
 //SET DEBUG=express-locallibrary-tutorial:* & npm run devStart
 //dburi mongodb+srv://user:User@123@first-nycgh.mongodb.net/test?retryWrites=true
 //Import the mongoose module
