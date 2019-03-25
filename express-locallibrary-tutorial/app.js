@@ -11,11 +11,7 @@ var catalogRouter = require('./routes/catalog');
 var app = express();
 //mongoose setup
 var mongoose = require('mongoose');
-<<<<<<< HEAD
-mongoose.connect('mongodb+srv://user:User@123@first-nycgh.mongodb.net/test?retryWrites=true', {useNewUrlParser: true });
-=======
 mongoose.connect('mongodb+srv://user:User@123@first-nycgh.mongodb.net/test?retryWrites=true', { useNewUrlParser: true });
->>>>>>> 7881c0f0eaadc28b7662dcc2903280a489e3f508
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
